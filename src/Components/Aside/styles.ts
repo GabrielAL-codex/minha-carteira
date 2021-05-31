@@ -6,3 +6,10 @@ export const Container = styled.div`
     background-color: ${props => props.theme.colors.secondary};
     `;
 
+export const Header = styled.header``;
+
+export const LogImg = styled.img``;
+
+export const MenuContainer = styled.nav``;
+
+export const MenuItemLink = styled.a``;
