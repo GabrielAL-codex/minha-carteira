@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const Container = styled.div`
     grid-area: AS;
     color: ${props => props.theme.colors.white};
@@ -39,11 +40,18 @@ export const MenuContainer = styled.nav`
         text-decoration: none;
 
         margin: 7px 0;
+        display: flex;
+        align-items: center;
 
 
         transition: opacity .3s;
 
         &:hover {
             opacity: .7;
+        }
+
+        > svg {
+            font-size: 18px;
+            margin-right: 5px;
         }
     `;
