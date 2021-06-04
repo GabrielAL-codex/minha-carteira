@@ -15,12 +15,12 @@ import {
  }
 
 const ContentHeader: React.FC<IContentHeaderProps> = ({
-    title,linecolor, children
+    title, linecolor, children
 }) => {
 
     return (
         <Container>
-            <TitleContainer>
+            <TitleContainer linecolor={linecolor}>
                 <h1>{title}</h1>
             </TitleContainer>
             <Controllers>
