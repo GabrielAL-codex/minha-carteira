@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SelectInput from '../../Components/SelectInput';
+
 
 import { 
     Container,
@@ -8,16 +8,23 @@ import {
     Controllers
  } from './styles';
 
-const ContentHeader: React.FC = () => {
+ interface IContentHeaderProps {
+     title: string;
+     linecolor: string;
+     children: React.ReactNode;
+ }
+
+const ContentHeader: React.FC<IContentHeaderProps> = ({
+    title,linecolor, children
+}) => {
+
     return (
         <Container>
             <TitleContainer>
-                <h1>TitleContainer</h1>
+                <h1>{title}</h1>
             </TitleContainer>
             <Controllers>
-                <SelectInput />
-                <SelectInput />
-                <SelectInput />
+                {children}
             </Controllers>
         </Container>
     );
