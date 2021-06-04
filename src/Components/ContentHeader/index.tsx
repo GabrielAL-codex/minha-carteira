@@ -16,6 +16,8 @@ const ContentHeader: React.FC = () => {
             </TitleContainer>
             <Controllers>
                 <SelectInput />
+                <SelectInput />
+                <SelectInput />
             </Controllers>
         </Container>
     );
